@@ -27,8 +27,8 @@ header {
 }
 
 .profile-photo {
-  width: 180px;
-  height: 220px;
+  width: 130px;
+  height: 160px;
   object-fit: cover;
   border-radius: 8px;
   border: 1px solid #e5e7eb;
@@ -46,8 +46,8 @@ header {
   }
 
   .profile-photo {
-    width: 180px;
-    height: 220px;
+    width: 130px;
+    height: 160px;
   }
 }
 
