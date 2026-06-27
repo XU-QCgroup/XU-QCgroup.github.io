@@ -112,3 +112,27 @@ nav a.active {
   border-bottom: 2px solid #111827;
   padding-bottom: 3px;
 }
+ol {
+  padding-left: 24px;
+}
+
+ol li {
+  margin-bottom: 18px;
+}
+
+.section h3 {
+  font-size: 21px;
+  color: #1f2937;
+  margin-top: 28px;
+  margin-bottom: 14px;
+}
+
+li a {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+em {
+  color: #374151;
+}
