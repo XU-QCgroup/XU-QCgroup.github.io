@@ -136,3 +136,10 @@ li a {
 em {
   color: #374151;
 }
+.news-list {
+  padding-left: 24px;
+}
+
+.news-list li {
+  margin-bottom: 12px;
+}
