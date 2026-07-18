@@ -151,7 +151,7 @@ em {
 .news-photo {
   display: block;
   width: 100%;
-  max-width: 620px;
+  max-width: 360px;
   height: auto;
   margin-top: 16px;
   border: 1px solid #e5e7eb;
