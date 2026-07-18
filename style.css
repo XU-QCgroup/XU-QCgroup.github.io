@@ -143,3 +143,17 @@ em {
 .news-list li {
   margin-bottom: 12px;
 }
+
+.news-item-with-photo {
+  margin-bottom: 28px;
+}
+
+.news-photo {
+  display: block;
+  width: 100%;
+  max-width: 620px;
+  height: auto;
+  margin-top: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
