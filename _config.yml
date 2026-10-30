@@ -13,6 +13,11 @@ lang: en
 # TODO: add the funding acknowledgment, e.g. "Supported by the U.S. DOE Office of Science, BES, ..."
 funding: ""
 
+# Private visit counting with GoatCounter (https://www.goatcounter.com, free, no cookies).
+# Set to your GoatCounter code, e.g. "xu-qcgroup" for xu-qcgroup.goatcounter.com.
+# Only counts on the published site, not local previews. Leave empty to turn off.
+goatcounter: ""
+
 # Authors marked as group members on the Publications page (exact spelling as in author lists).
 pi_author: P. Xu
 group_authors:

@@ -47,6 +47,11 @@ Placeholders: `index.html` (hero + three research cards) and `research.html` (on
 
 **Profile links** (Google Scholar, ORCID, GitHub, CV, ...): `_data/links.yml`. An empty `url` hides the link.
 
+## Visit statistics (private)
+
+Visits are counted with [GoatCounter](https://www.goatcounter.com) when `goatcounter` is set in `_config.yml`.
+Statistics are only visible on your GoatCounter dashboard, not on the site. Local previews are not counted.
+
 ## Preview locally (optional)
 
 Needs Ruby ≥ 2.7 and Jekyll: `gem install jekyll`, then `jekyll serve` and open http://localhost:4000.
