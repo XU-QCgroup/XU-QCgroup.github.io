@@ -1,6 +1,7 @@
 # Each section is hidden automatically while its members list is empty.
 # Member fields (all optional except name): photo, role, bio, interests, project,
 # email, fun, links (true shows the PI profile links from links.yml).
+# interests can be one sentence, or a list (with an optional interests_summary line above it).
 # Without a photo, a placeholder silhouette is shown.
 
 - section: Principal Investigator
@@ -11,9 +12,16 @@
         Group Leader, Ames National Laboratory<br>
         Adjunct Assistant Professor, Department of Chemistry, Iowa State University
       bio: ""   # TODO: 2-3 sentences: PhD (where, advisor), postdoc, current positions
-      interests: >-
-        Quantum chemistry, electronic structure theory, computational materials
-        science, and molecular simulation.
+      interests_summary: >-
+        First-principles theories and scalable computational frameworks for complex
+        chemical and biological systems.
+      interests:
+        - "Fragmentation and embedding methods: EFP, FMO, EFMO, and QM/EFP"
+        - Intermolecular interactions, many-body and higher-order (R<sup>−7</sup>, R<sup>−8</sup>) dispersion, and ab initio force fields
+        - Open-shell and multireference quantum chemistry method development
+        - Free energies and sampling with Monte Carlo, molecular dynamics, and the QM-based mining minima method (QM-VM2)
+        - GPU-accelerated and high-performance quantum chemistry in GAMESS, automated workflows, and AI-assisted modernization of scientific software
+        - "Applications: protein–ligand binding, metal–biomolecule interactions, gas adsorption and separation, catalysis, and critical-materials chemistry"
       email: pxu@ameslab.gov
       links: true
 
