@@ -1,6 +1,6 @@
 # Each section is hidden automatically while its members list is empty.
 # Member fields (all optional except name): photo, role, bio, interests, project,
-# email, fun, links (true shows the PI profile links from links.yml).
+# email (one address or a list), fun, links (true shows the PI profile links from links.yml).
 # interests can be one sentence, or a list (with an optional interests_summary line above it).
 # Without a photo, a placeholder silhouette is shown.
 
@@ -22,7 +22,9 @@
         - Free energies and sampling with Monte Carlo, molecular dynamics, and the QM-based mining minima method (QM-VM2)
         - GPU-accelerated and high-performance quantum chemistry in GAMESS, automated workflows, and AI-assisted modernization of scientific software
         - "Applications: protein–ligand binding, metal–biomolecule interactions, gas adsorption and separation, catalysis, and critical-materials chemistry"
-      email: pxu@ameslab.gov
+      email:
+        - pxu@ameslab.gov
+        - pxu@iastate.edu
       links: true
 
 - section: Postdoctoral Researchers

@@ -54,7 +54,7 @@ Needs Ruby ≥ 2.7 and Jekyll: `gem install jekyll`, then `jekyll serve` and ope
 ## Still to fill in (search for `TODO`)
 
 - `_config.yml`: `funding` acknowledgment (shown in footer and on Research)
-- `_data/links.yml`: ORCID, Ames Lab profile, ISU profile, CV
+- `_data/links.yml`: Ames Lab profile, ISU profile, CV
 - `_data/people.yml`: Peng's short bio; Gregory Curtin's photo, title, interests, project, email; review Sam's draft interests/project
 - `_data/publications.yml`: Connor's poster title and author list
 - `contact.html`: `office` (building and room)

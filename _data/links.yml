@@ -4,7 +4,7 @@ pi:
   - name: Google Scholar
     url: https://scholar.google.com/citations?user=1w8XrjYAAAAJ&hl=en
   - name: ORCID
-    url: ""        # TODO: https://orcid.org/0000-...
+    url: https://orcid.org/0000-0002-7762-8934
   - name: GitHub
     url: https://github.com/XU-QCgroup
   - name: Ames Lab profile

@@ -14,7 +14,9 @@
       <ul class="interest-list">{% for item in p.interests %}<li>{{ item }}</li>{% endfor %}</ul>
     {% elsif p.interests and p.interests != "" %}<p><strong>Research interests:</strong> {{ p.interests }}</p>{% endif %}
     {% if p.project and p.project != "" %}<p><strong>Project area:</strong> {{ p.project }}</p>{% endif %}
-    {% if p.email and p.email != "" %}<p><strong>Email:</strong> <a href="mailto:{{ p.email }}">{{ p.email }}</a></p>{% endif %}
+    {% if p.email.first %}
+      <p><strong>Email:</strong> {% for address in p.email %}<a href="mailto:{{ address }}">{{ address }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+    {% elsif p.email and p.email != "" %}<p><strong>Email:</strong> <a href="mailto:{{ p.email }}">{{ p.email }}</a></p>{% endif %}
     {% if p.fun and p.fun != "" %}<p><strong>Fun detail:</strong> {{ p.fun }}</p>{% endif %}
     {% if p.links %}{% include profile-links.html %}{% endif %}
   </div>
