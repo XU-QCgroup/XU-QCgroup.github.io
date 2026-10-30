@@ -1,0 +1,29 @@
+# Site-wide settings. GitHub Pages builds this site with Jekyll automatically.
+title: Xu Group
+tagline: Quantum Chemistry | Ames National Laboratory
+description: >-
+  The Xu Group (XU-QCgroup) at Ames National Laboratory and Iowa State University
+  develops fragment-based quantum chemistry methods, workflows and software for
+  complex molecular, biological and materials systems.
+url: https://xu-qcgroup.github.io
+baseurl: ""
+lang: en
+
+# Shown in the footer and on the Research page when filled in.
+# TODO: add the funding acknowledgment, e.g. "Supported by the U.S. DOE Office of Science, BES, ..."
+funding: ""
+
+# Authors marked as group members on the Publications page (exact spelling as in author lists).
+pi_author: P. Xu
+group_authors:
+  - S. L. Leonard
+  - C. Fundell
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+exclude:
+  - README.md

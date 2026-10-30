@@ -1,0 +1,9 @@
+<nav class="site-nav" aria-label="Main">
+  {% for item in site.data.nav %}
+    {% if page.url == item.url or page.url == "/index.html" and item.url == "/" %}
+      <a href="{{ item.url | relative_url }}" class="active" aria-current="page">{{ item.title }}</a>
+    {% else %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endif %}
+  {% endfor %}
+</nav>

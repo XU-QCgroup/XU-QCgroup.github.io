@@ -1,0 +1,128 @@
+# Papers from recent_since onward are listed under "Recent"; older ones are grouped by topic.
+# The PI's name is bolded and group members (group_authors in _config.yml) are marked automatically.
+# Optional: toc: images/toc/<file>.png shows a table-of-contents graphic beside the entry.
+
+recent_since: 2023
+
+topics:
+  - Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+  - Applications to Molecular Recognition and Chemical Systems
+  - Software and Infrastructure
+
+papers:
+  - authors: M. Schlinsog, T. Sattasathuchana, P. Xu, E. B. Guidez, M. K. Gilson, M. J. Potter, M. S. Gordon, and S. P. Webb
+    title: Computation of protein–ligand binding free energies with a quantum mechanics-based mining minima algorithm
+    journal: Journal of Chemical Theory and Computation
+    volume: "21"
+    pages: 4236–4265
+    year: 2025
+    doi: 10.1021/acs.jctc.4c01707
+    topic: Applications to Molecular Recognition and Chemical Systems
+
+  - authors: P. Xu, S. L. Leonard, W. O’Brien, and M. S. Gordon
+    title: "R<sup>−8</sup> dispersion interaction: Derivation and application to the effective fragment potential method"
+    journal: Journal of Physical Chemistry A
+    volume: "128"
+    pages: 292–327
+    year: 2024
+    doi: 10.1021/acs.jpca.3c05115
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: T. Sattasathuchana, P. Xu, et al.
+    title: "The effective fragment molecular orbital method: Achieving high scalability and accuracy for large systems"
+    journal: Journal of Chemical Theory and Computation
+    volume: "20"
+    pages: 2445–2461
+    year: 2024
+    doi: 10.1021/acs.jctc.3c01309
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: F. Zahariev, P. Xu, B. M. Westheimer, S. Webb, J. Galvez Vallejo, A. Tiwari, V. Sundriyal, M. Sosonkina, J. Shen, G. Schoendorff, et al.
+    title: "The general atomic and molecular electronic structure system (GAMESS): Novel methods on novel architectures"
+    journal: Journal of Chemical Theory and Computation
+    volume: "19"
+    pages: 7031–7055
+    year: 2023
+    doi: 10.1021/acs.jctc.3c00379
+    topic: Software and Infrastructure
+
+  - authors: P. Xu, T. Sattasathuchana, E. Guidez, S. P. Webb, K. Montgomery, H. Yasini, I. F. M. Pedreira, and M. S. Gordon
+    title: Computation of host–guest binding free energies with a new quantum mechanics based mining minima algorithm
+    journal: Journal of Chemical Physics
+    volume: "154"
+    pages: "104122"
+    year: 2021
+    doi: 10.1063/5.0040759
+    topic: Applications to Molecular Recognition and Chemical Systems
+
+  - authors: P. Xu, M. Alkan, and M. S. Gordon
+    title: Many-body dispersion
+    journal: Chemical Reviews
+    volume: "120"
+    pages: 12343–12356
+    year: 2020
+    doi: 10.1021/acs.chemrev.0c00216
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: G. M. J. Barca, C. Bertoni, L. Carrington, D. Datta, N. De Silva, J. E. Deustua, D. G. Fedorov, J. R. Gour, A. O. Gunina, E. Guidez, et al.
+    title: Recent developments in the general atomic and molecular electronic structure system
+    journal: Journal of Chemical Physics
+    volume: "152"
+    pages: "154102"
+    year: 2020
+    doi: 10.1063/5.0005188
+    topic: Software and Infrastructure
+
+  - authors: M. Alkan, P. Xu, and M. S. Gordon
+    title: Many-body dispersion in molecular clusters
+    journal: Journal of Physical Chemistry A
+    volume: "123"
+    pages: 8406–8416
+    year: 2019
+    doi: 10.1021/acs.jpca.9b05977
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: T. Sattasathuchana, P. Xu, and M. S. Gordon
+    title: "An accurate quantum-based approach to explicit solvent effects: Interfacing the general effective fragment potential method with ab initio electronic structure theory"
+    journal: Journal of Physical Chemistry A
+    volume: "123"
+    pages: 8460–8475
+    year: 2019
+    doi: 10.1021/acs.jpca.9b05801
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: P. Xu and R. Hoffmann
+    title: The dimerization of H<sub>2</sub>NO
+    journal: Journal of Physical Chemistry A
+    volume: "120"
+    pages: 1283–1296
+    year: 2016
+    doi: 10.1021/acs.jpca.5b12674
+    topic: Applications to Molecular Recognition and Chemical Systems
+
+  - authors: P. Xu, F. Zahariev, and M. S. Gordon
+    title: The R<sup>−7</sup> dispersion interaction in the general effective fragment potential method
+    journal: Journal of Chemical Theory and Computation
+    volume: "10"
+    pages: 1576–1587
+    year: 2014
+    doi: 10.1021/ct500017n
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+  - authors: P. Xu and M. S. Gordon
+    title: Charge transfer interaction using quasiatomic minimal-basis orbitals in the effective fragment potential method
+    journal: Journal of Chemical Physics
+    volume: "139"
+    pages: "194104"
+    year: 2013
+    doi: 10.1063/1.4829509
+    topic: Methods for Noncovalent Interactions and Fragment-Based Quantum Chemistry
+
+# Preprints, talks and posters (newest first).
+presentations:
+  - authors: C. Fundell and P. Xu   # TODO: confirm author list
+    title: ""                       # TODO: poster title
+    event: 56th Midwest Theoretical Chemistry Conference, University of Minnesota Twin Cities
+    kind: Poster
+    date: May 2026
+    note: Best Poster Award

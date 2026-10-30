@@ -1,0 +1,18 @@
+{% assign p = include.person %}
+<article class="person-card">
+  {% if p.photo and p.photo != "" %}
+    <img src="{{ p.photo | relative_url }}" alt="{{ p.name }}" class="profile-photo" loading="lazy" />
+  {% else %}
+    <img src="{{ '/images/placeholder/person.svg' | relative_url }}" alt="Photo coming soon" class="profile-photo" />
+  {% endif %}
+  <div class="person-body">
+    <h3>{{ p.name }}</h3>
+    {% if p.role and p.role != "" %}<p class="person-role">{{ p.role }}</p>{% endif %}
+    {% if p.bio and p.bio != "" %}<p>{{ p.bio }}</p>{% endif %}
+    {% if p.interests and p.interests != "" %}<p><strong>Research interests:</strong> {{ p.interests }}</p>{% endif %}
+    {% if p.project and p.project != "" %}<p><strong>Project area:</strong> {{ p.project }}</p>{% endif %}
+    {% if p.email and p.email != "" %}<p><strong>Email:</strong> <a href="mailto:{{ p.email }}">{{ p.email }}</a></p>{% endif %}
+    {% if p.fun and p.fun != "" %}<p><strong>Fun detail:</strong> {{ p.fun }}</p>{% endif %}
+    {% if p.links %}{% include profile-links.html %}{% endif %}
+  </div>
+</article>

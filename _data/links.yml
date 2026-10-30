@@ -1,0 +1,23 @@
+# Profile and institutional links, reused on People, Publications, Contact and the footer.
+# Leave a url empty ("") to hide that link until it is ready.
+pi:
+  - name: Google Scholar
+    url: https://scholar.google.com/citations?user=1w8XrjYAAAAJ&hl=en
+  - name: ORCID
+    url: ""        # TODO: https://orcid.org/0000-...
+  - name: GitHub
+    url: https://github.com/XU-QCgroup
+  - name: Ames Lab profile
+    url: ""        # TODO
+  - name: ISU Chemistry profile
+    url: ""        # TODO
+  - name: CV
+    url: ""        # TODO: e.g. files/peng-xu-cv.pdf
+
+institutions:
+  - name: Ames National Laboratory
+    url: https://www.ameslab.gov/
+  - name: ISU Department of Chemistry
+    url: https://www.chem.iastate.edu/
+  - name: GitHub
+    url: https://github.com/XU-QCgroup

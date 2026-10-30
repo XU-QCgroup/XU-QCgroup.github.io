@@ -1,0 +1,15 @@
+# Newest items appear first automatically; the home page shows the latest three.
+# date: YYYY-MM (used for sorting)   label: what readers see
+# image and image_alt are optional.
+- date: 2026-06
+  label: June 2026
+  text: The XU-QCgroup website has been updated with new research directions.
+
+- date: 2026-05
+  label: May 2026
+  text: >-
+    Congratulations to Connor Fundell for receiving the Best Poster Award at the
+    56th Midwest Theoretical Chemistry Conference, held at the University of
+    Minnesota Twin Cities.
+  image: images/news/connor-best-poster-mwtcc-2026.jpg
+  image_alt: Connor Fundell's Best Poster Award from the 56th Midwest Theoretical Chemistry Conference

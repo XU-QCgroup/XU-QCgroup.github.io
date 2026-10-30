@@ -1,0 +1,3 @@
+<p class="link-row">
+  {% for link in site.data.links.pi %}{% if link.url != "" %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endif %}{% endfor %}
+</p>

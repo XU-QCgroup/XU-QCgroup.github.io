@@ -1,32 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Research | XU-QCgroup</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <p class="site-title">XU-QCgroup</p>
-    <p class="site-subtitle">Ames National Laboratory & Iowa State University</p>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html" class="active">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="news.html">News</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-   <section class="hero">
+---
+title: Research
+description: >-
+  Fragment-based quantum chemistry and embedding theory, automated workflows and
+  scientific software, and binding free energies for molecular recognition.
+---
+<section class="hero">
   <h1>Research</h1>
-
   <p>
     Our group develops fragment-based quantum chemistry methods, molecular simulation
     workflows, and scientific software for studying complex chemical, biological, and
@@ -38,7 +17,7 @@
 
 <section class="section">
   <h2>Fragment-Based Quantum Chemistry and Embedding Theory</h2>
-
+  {% include figure.html src="" placeholder="QM/EFP: a QM region embedded in effective fragments (e.g. a TOC graphic from the R<sup>−8</sup> dispersion paper)" %}
   <p>
     We develop new theoretical formulations for fragment-based quantum chemistry and
     embedding methods. Current directions include extending effective fragment
@@ -47,7 +26,6 @@
     environments, and developing more general mathematical formulations of EFP for
     robust and transferable applications.
   </p>
-
   <p>
     Specific areas of interest include open-shell and multireference QM/EFP,
     open-shell and multireference EFMO, EFP fragments with electronically complex
@@ -57,14 +35,13 @@
 
 <section class="section">
   <h2>Automated Workflows and Scientific Software</h2>
-
+  {% include figure.html src="" placeholder="Workflow: peptide sequence → predicted metal–peptide structure → high-throughput binding free energies" %}
   <p>
     We build computational workflows that connect molecular structure, quantum
     chemistry, and binding thermodynamics. One current goal is to predict
     metal–peptide coordination structures directly from peptide sequences and use
     these structures in high-throughput calculations of metal binding free energies.
   </p>
-
   <p>
     We are also interested in developing interfaces and APIs that make advanced
     fragmentation methods in GAMESS easier to use, automate, and integrate into
@@ -74,7 +51,7 @@
 
 <section class="section">
   <h2>Molecular Recognition, Bioinorganic Chemistry, and Binding Free Energies</h2>
-
+  {% include figure.html src="" placeholder="Binding free energies: e.g. a protein–ligand or host–guest complex from the mining minima papers" %}
   <p>
     Our applications are motivated by molecular recognition problems where electronic
     structure, noncovalent interactions, solvation, and conformational flexibility are
@@ -82,7 +59,6 @@
     protein–ligand binding, with the goal of improving computational predictions of
     structures, interactions, and binding free energies.
   </p>
-
   <p>
     These application areas provide demanding test cases for our methods while also
     addressing problems relevant to biological chemistry, environmental chemistry, and
@@ -92,7 +68,6 @@
 
 <section class="section">
   <h2>Emerging Directions and Collaborative Frontiers</h2>
-
   <p>
     We are interested in collaborations that connect fragment-based quantum chemistry
     with quantum computing, machine learning, artificial intelligence, and data-driven
@@ -100,17 +75,16 @@
     electronic-structure calculations, improving molecular representations, and
     building predictive models for complex chemical systems.
   </p>
-
   <p>
     We are also exploring opportunities to apply fragmentation-based methods to
     polymeric systems, nanomaterials, and other heterogeneous molecular and materials
     platforms.
   </p>
-</section> 
-  </main>
+</section>
 
-  <footer>
-    © XU-QCgroup. Hosted by GitHub Pages.
-  </footer>
-</body>
-</html>
+{% if site.funding != "" %}
+<section class="section">
+  <h2>Funding</h2>
+  <p>{{ site.funding }}</p>
+</section>
+{% endif %}
