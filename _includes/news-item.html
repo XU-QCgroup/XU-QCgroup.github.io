@@ -1,0 +1,10 @@
+{% assign n = include.item %}
+<li class="news-item{% if n.image %} news-item-with-photo{% endif %}">
+  <span class="news-date">{{ n.label }}</span>
+  <div class="news-text">
+    {{ n.text }}
+    {% if n.image and include.show_image %}
+      <img src="{{ n.image | relative_url }}" alt="{{ n.image_alt | escape }}" class="news-photo" loading="lazy" />
+    {% endif %}
+  </div>
+</li>

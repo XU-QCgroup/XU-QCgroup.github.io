@@ -1,82 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Opportunities | XU-QCgroup</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+---
+title: Opportunities
+description: >-
+  Openings for postdoctoral researchers, graduate students, undergraduates and visitors
+  in quantum chemistry and molecular simulation at Ames National Laboratory and Iowa State University.
+# TODO: set to e.g. "We are recruiting graduate students for Fall 2027." Leave empty to hide.
+status: ""
+---
+<section class="hero">
+  <h1>Opportunities</h1>
+  <p>
+    We welcome motivated students and researchers interested in quantum chemistry,
+    molecular simulation, high-performance computing, scientific software, method
+    development, computational workflows, and applications to complex molecular,
+    biological, and materials systems.
+  </p>
+  {% if page.status != "" %}<div class="callout"><p><strong>Current openings:</strong> {{ page.status }}</p></div>{% endif %}
+</section>
 
-<body>
-  <header>
-    <p class="site-title">XU-QCgroup</p>
-    <p class="site-subtitle">Ames National Laboratory & Iowa State University</p>
+<section class="section">
+  <h2>Helpful Background</h2>
+  <p>No one is expected to have all of these; any of them is a good start.</p>
+  <ul>
+    <li>Quantum chemistry or electronic structure theory coursework</li>
+    <li>Programming in Python; Fortran or C/C++ for method development</li>
+    <li>Linux command line and high-performance computing (job schedulers, parallel runs)</li>
+    <li>Experience with GAMESS or other quantum chemistry packages</li>
+    <li>Interest in noncovalent interactions, binding free energies, or scientific software</li>
+  </ul>
+</section>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="news.html">News</a>
-      <a href="opportunities.html" class="active">Opportunities</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<section class="section">
+  <h2>Prospective Postdoctoral Researchers</h2>
+  <p>
+    Prospective postdoctoral researchers whose interests align with the
+    group’s research directions are welcome to contact us. Please include
+    a CV, a brief description of research interests, representative
+    publications, and possible start date.
+  </p>
+  <p><a class="button" href="mailto:pxu@ameslab.gov?subject=Postdoctoral%20inquiry">Email Peng Xu</a></p>
+</section>
 
-  <main>
-    <section class="hero">
-      <h1>Opportunities</h1>
-      <p>
-  We welcome motivated students and researchers interested in quantum chemistry,
-  molecular simulation, high-performance computing, scientific software, method
-  development, computational workflows, and applications to complex molecular,
-  biological, and materials systems.
-</p>
-    </section>
+<section class="section">
+  <h2>Prospective Graduate Students</h2>
+  <p>
+    Prospective graduate students should apply through the
+    <a href="https://www.chem.iastate.edu/admissions" target="_blank" rel="noopener">Iowa State University Department of Chemistry graduate program</a>.
+    Students interested in joining the XU-QCgroup are encouraged to mention
+    their interest in computational chemistry, quantum chemistry, molecular
+    simulation, and/or computational materials research in their application.
+  </p>
+  <p><a class="button" href="mailto:pxu@iastate.edu?subject=Prospective%20graduate%20student">Email Peng Xu</a></p>
+</section>
 
-    <section class="section">
-      <h2>Prospective Postdoctoral Researchers</h2>
-      <p>
-        Prospective postdoctoral researchers whose interests align with the
-        group’s research directions are welcome to contact us. Please include
-        a CV, a brief description of research interests, representative
-        publications, and possible start date.
-      </p>
-    </section>
+<section class="section">
+  <h2>Undergraduate Research</h2>
+  <p>
+    Undergraduate students interested in research experience are welcome to
+    contact us. Please include your major, year, relevant coursework or
+    programming experience, research interests, and expected time availability.
+  </p>
+  <p><a class="button" href="mailto:pxu@iastate.edu?subject=Undergraduate%20research">Email Peng Xu</a></p>
+</section>
 
-    <section class="section">
-      <h2>Prospective Graduate Students</h2>
-      <p>
-        Prospective graduate students should apply through the
-        <a href="https://www.chem.iastate.edu/admissions" target="_blank" rel="noopener">
-          Iowa State University Department of Chemistry graduate program
-        </a>.
-        Students interested in joining the XU-QCgroup are encouraged to mention
-        their interest in computational chemistry, quantum chemistry, molecular
-        simulation, and/or computational materials research in their application.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Undergraduate Research</h2>
-      <p>
-        Undergraduate students interested in research experience are welcome to
-        contact us. Please include your major, year, relevant coursework or
-        programming experience, research interests, and expected time availability.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>Visiting Scholars and Students</h2>
-      <p>
-        We also welcome inquiries from visiting scholars and visiting students
-        whose research interests align with the group’s activities.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    © XU-QCgroup. Hosted by GitHub Pages.
-  </footer>
-</body>
-</html>
+<section class="section">
+  <h2>Visiting Scholars and Students</h2>
+  <p>
+    We also welcome inquiries from visiting scholars and visiting students
+    whose research interests align with the group’s activities.
+  </p>
+  <p><a class="button" href="mailto:pxu@ameslab.gov?subject=Visiting%20inquiry">Email Peng Xu</a></p>
+</section>

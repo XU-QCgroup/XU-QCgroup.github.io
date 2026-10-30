@@ -1,48 +1,23 @@
-<!DOCTYPE html>
+---
+title: Contact
+description: How to reach the Xu Group at Ames National Laboratory and Iowa State University.
+# TODO: fill in the office location, e.g. "Room 123, Spedding Hall". Leave empty to hide.
+office: ""
+---
+<section class="hero">
+  <h1>Contact</h1>
+  <p>Contact information for the XU-QCgroup.</p>
+</section>
 
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact | XU-QCgroup</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <p class="site-title">XU-QCgroup</p>
-    <p class="site-subtitle">Ames National Laboratory & Iowa State University</p>
-
-```
-<nav>
-  <a href="index.html">Home</a>
-  <a href="research.html">Research</a>
-  <a href="people.html">People</a>
-  <a href="publications.html">Publications</a>
-  <a href="news.html">News</a>
-  <a href="opportunities.html">Opportunities</a>
-  <a href="contact.html" class="active">Contact</a>
-</nav>
-```
-
-  </header>
-
-  <main>
-    <section class="hero">
-      <h1>Contact</h1>
-      <p>
-        Contact information for the XU-QCgroup.
-      </p>
-    </section>
-
-```
 <section class="section">
   <h2>Group Location</h2>
   <p>
+    {% if page.office != "" %}{{ page.office }}<br />{% endif %}
     Ames National Laboratory<br />
     Iowa State University<br />
-    Ames, Iowa, USA
+    Ames, Iowa 50011, USA
   </p>
+  <p><a href="https://www.google.com/maps/search/?api=1&amp;query=Ames+National+Laboratory+Ames+Iowa" target="_blank" rel="noopener">Open in Google Maps</a></p>
 </section>
 
 <section class="section">
@@ -55,17 +30,8 @@
 
 <section class="section">
   <h2>Links</h2>
-  <p>
-    Links to institutional profiles, Google Scholar, ORCID, and GitHub will
-    be added here.
+  {% include profile-links.html %}
+  <p class="link-row">
+    {% for link in site.data.links.institutions %}{% unless link.name == "GitHub" %}<a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.name }}</a>{% endunless %}{% endfor %}
   </p>
 </section>
-```
-
-  </main>
-
-  <footer>
-    © XU-QCgroup. Hosted by GitHub Pages.
-  </footer>
-</body>
-</html>

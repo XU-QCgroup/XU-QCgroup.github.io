@@ -1,0 +1,10 @@
+{% assign pub = include.pub %}
+<li class="pub{% if pub.toc %} pub-with-toc{% endif %}">
+  {% if pub.toc %}<img src="{{ pub.toc | relative_url }}" alt="Table-of-contents graphic" class="pub-toc" loading="lazy" />{% endif %}
+  <div>
+    {% include authors.html authors=pub.authors %},
+    “{{ pub.title }},”
+    <em>{{ pub.journal }}</em> <strong>{{ pub.volume }}</strong>, {{ pub.pages }} ({{ pub.year }}).
+    <a class="doi" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI</a>
+  </div>
+</li>

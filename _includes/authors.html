@@ -1,0 +1,7 @@
+{%- capture pi_bold -%}<strong>{{ site.pi_author }}</strong>{%- endcapture -%}
+{%- assign authors = include.authors | replace: site.pi_author, pi_bold -%}
+{%- for member in site.group_authors -%}
+  {%- capture marked -%}<span class="group-member">{{ member }}</span><sup>†</sup>{%- endcapture -%}
+  {%- assign authors = authors | replace: member, marked -%}
+{%- endfor -%}
+{{- authors -}}

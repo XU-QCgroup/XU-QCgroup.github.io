@@ -1,84 +1,24 @@
-<!DOCTYPE html>
+---
+title: News
+description: Group updates, student achievements, publications and presentations from the Xu Group.
+---
+<section class="hero">
+  <h1>News</h1>
+  <p>
+    Group updates, student achievements, publications, presentations, and
+    other announcements from the XU-QCgroup.
+  </p>
+</section>
 
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>News | XU-QCgroup</title>
-
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-
-  <header>
-    <p class="site-title">XU-QCgroup</p>
-
-    <p class="site-subtitle">Ames National Laboratory &amp; Iowa State University</p>
-
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="research.html">Research</a>
-      <a href="people.html">People</a>
-      <a href="publications.html">Publications</a>
-      <a href="news.html" class="active">News</a>
-      <a href="opportunities.html">Opportunities</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
-
-  <main>
-
-    <section class="hero">
-      <h1>News</h1>
-
-      <p>
-        Group updates, student achievements, publications, presentations, and
-        other announcements from the XU-QCgroup.
-      </p>
-    </section>
-
-    <section class="section">
-      <h2>2026</h2>
-
-      <ul class="news-list">
-
-        <li class="news-item-with-photo">
-  <div>
-    <strong>May 2026:</strong>
-    Congratulations to Connor Fundell for receiving the Best Poster Award
-    at the 56th Midwest Theoretical Chemistry Conference, held at the
-    University of Minnesota Twin Cities.
-  </div>
-
-  <img
-    src="images/news/connor-best-poster-mwtcc-2026.jpg"
-    alt="Connor Fundell's Best Poster Award from the 56th Midwest Theoretical Chemistry Conference"
-    class="news-photo"
-  />
-</li>
-        <li>
-          <strong>June 2026:</strong> The XU-QCgroup website has been updated
-          with new research directions.
-        </li>
-
-        <li>
-          <strong>2026:</strong> We welcome students and researchers interested
-          in quantum chemistry, molecular simulation, high-performance computing,
-          scientific software, and applications to biological and materials
-          systems.
-        </li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer>
-    © XU-QCgroup. Hosted by GitHub Pages.
-  </footer>
-
-</body>
-
-</html>
+{% assign news = site.data.news | sort: "date" | reverse %}
+{% assign years = news | group_by_exp: "item", "item.date | slice: 0, 4" %}
+{% for year in years %}
+<section class="section">
+  <h2>{{ year.name }}</h2>
+  <ul class="news-list">
+    {% for item in year.items %}
+      {% include news-item.html item=item show_image=true %}
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}

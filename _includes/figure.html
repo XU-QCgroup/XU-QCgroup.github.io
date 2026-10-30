@@ -1,0 +1,16 @@
+{% comment %}
+  Usage: {% include figure.html src="images/research/qm-efp.png" alt="..." caption="..." %}
+  Without src (or with an empty src) a labeled placeholder box is shown instead.
+  Optional: placeholder="what the figure should show", class="figure-wide"
+{% endcomment %}
+<figure class="figure {{ include.class }}">
+  {% if include.src and include.src != "" %}
+    <img src="{{ include.src | relative_url }}" alt="{{ include.alt | default: include.caption | escape }}" loading="lazy" />
+  {% else %}
+    <div class="figure-placeholder" role="img" aria-label="Figure placeholder">
+      <span class="figure-placeholder-label">Figure placeholder</span>
+      {% if include.placeholder %}<span>{{ include.placeholder }}</span>{% endif %}
+    </div>
+  {% endif %}
+  {% if include.caption %}<figcaption>{{ include.caption }}</figcaption>{% endif %}
+</figure>

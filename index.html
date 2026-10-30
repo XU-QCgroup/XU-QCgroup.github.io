@@ -1,32 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>XU-QCgroup</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-
-<body>
-  <header>
-    <p class="site-title">XU-QCgroup</p>
-    <p class="site-subtitle">Ames National Laboratory &amp; Iowa State University</p>
-	  
-	<nav>
-  		<a href="index.html" class="active">Home</a>
-  		<a href="research.html">Research</a>
-  		<a href="people.html">People</a>
-  		<a href="publications.html">Publications</a>
-		<a href="news.html">News</a>
-  		<a href="opportunities.html">Opportunities</a>
-  		<a href="contact.html">Contact</a>
-	</nav>
-  </header>
-
-  <main>
-    <section class="hero">
+---
+description: >-
+  The Xu Group develops fragment-based quantum chemistry methods, molecular simulation
+  workflows and scientific software at Ames National Laboratory and Iowa State University.
+---
+<section class="hero">
   <h1>Fragment-based quantum chemistry for complex molecular and materials systems</h1>
-
   <p>
     The XU-QCgroup develops quantum chemistry methods, molecular simulation workflows,
     and scientific software for studying complex chemical, biological, and materials
@@ -34,93 +12,57 @@
     systems that are too large, heterogeneous, or electronically complex for conventional
     approaches.
   </p>
+  {% include figure.html src="" class="figure-wide" placeholder="Hero image: a representative system, e.g. a QM region embedded in EFP fragments" %}
 </section>
 
 <section class="section">
   <h2>Research</h2>
-
-  <p>
-    We focus on fragment-based quantum chemistry, embedding theory, automated
-    computational workflows, and applications in molecular recognition, bioinorganic
-    chemistry, and materials modeling.
-  </p>
-
-  <h3>Method development</h3>
-  <p>
-    We develop effective fragment potential, effective fragment molecular orbital,
-    and QM/EFP methods, with an emphasis on open-shell, multireference, and scalable
-    formulations for complex electronic environments.
-  </p>
-
-  <h3>Workflows and software</h3>
-  <p>
-    We build automated workflows and user-friendly interfaces that make advanced
-    fragmentation methods easier to use in high-throughput quantum chemistry and
-    molecular simulation studies.
-  </p>
-
-  <h3>Applications</h3>
-  <p>
-    Current applications include metal–peptide coordination, protein–ligand binding,
-    molecular recognition, solvation, and emerging problems in polymeric and nanoscale
-    materials.
-  </p>
-
-  <p>
-    <a href="research.html">Learn more about our research directions.</a>
-  </p>
+  <div class="card-grid">
+    <div class="card">
+      {% include figure.html src="" placeholder="QM/EFP embedding schematic" %}
+      <h3>Method development</h3>
+      <p>
+        Effective fragment potential, effective fragment molecular orbital, and QM/EFP
+        methods, with an emphasis on open-shell, multireference, and scalable formulations.
+      </p>
+    </div>
+    <div class="card">
+      {% include figure.html src="" placeholder="Sequence → metal–peptide structure → binding free energy workflow" %}
+      <h3>Workflows and software</h3>
+      <p>
+        Automated workflows and user-friendly interfaces that make advanced fragmentation
+        methods in GAMESS easier to use in high-throughput studies.
+      </p>
+    </div>
+    <div class="card">
+      {% include figure.html src="" placeholder="Protein–ligand or host–guest binding example" %}
+      <h3>Applications</h3>
+      <p>
+        Metal–peptide coordination, protein–ligand binding, molecular recognition,
+        solvation, and emerging problems in polymeric and nanoscale materials.
+      </p>
+    </div>
+  </div>
+  <p><a class="lead-link" href="{{ '/research.html' | relative_url }}">More about our research →</a></p>
 </section>
 
-	  <section class="section" id="news">
+<section class="section">
   <h2>Latest News</h2>
-
+  {% assign news = site.data.news | sort: "date" | reverse %}
   <ul class="news-list">
-    <li>
-      <strong>2026:</strong> We welcome students and researchers interested in
-      quantum chemistry, molecular simulation, high-performance computing,
-      scientific software, and applications to biological and materials systems.
-    </li>
+    {% for item in news limit: 3 %}
+      {% include news-item.html item=item show_image=false %}
+    {% endfor %}
   </ul>
-
-  <p>
-    <a href="news.html">View all news.</a>
-  </p>
+  <p><a class="lead-link" href="{{ '/news.html' | relative_url }}">All news →</a></p>
 </section>
-    <section class="section" id="people">
-      <h2>People</h2>
-      <p>
-        Group member information will be added here.
-      </p>
-    </section>
 
-    <section class="section" id="publications">
-      <h2>Publications</h2>
-      <p>
-        Selected publications will be added here.
-      </p>
-    </section>
-
-    <section class="section" id="opportunities">
-      <h2>Opportunities</h2>
-<p>
-  The group is led by Peng Xu at Ames National Laboratory and Iowa State University.
-  We welcome students and researchers interested in quantum chemistry, molecular
-  simulation, high-performance computing, scientific software, and applications to
-  biological and materials systems.
-</p>
-    </section>
-
-    <section class="section" id="contact">
-      <h2>Contact</h2>
-      <p>
-        Ames National Laboratory and Iowa State University<br />
-        Contact information will be added here.
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    © XU-QCgroup. Hosted by GitHub Pages.
-  </footer>
-</body>
-</html>
+<section class="section">
+  <div class="callout">
+    <p>
+      <strong>Join us.</strong> We welcome students and researchers interested in quantum
+      chemistry, molecular simulation, high-performance computing, and scientific software.
+    </p>
+    <a class="button" href="{{ '/opportunities.html' | relative_url }}">See opportunities</a>
+  </div>
+</section>

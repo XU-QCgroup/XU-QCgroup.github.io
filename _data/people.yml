@@ -1,0 +1,92 @@
+# Each section is hidden automatically while its members list is empty.
+# Member fields (all optional except name): photo, role, bio, interests, project,
+# email (one address or a list), fun, links (true shows the PI profile links from links.yml).
+# interests can be one sentence, or a list (with an optional interests_summary line above it).
+# Without a photo, a placeholder silhouette is shown.
+
+- section: Principal Investigator
+  members:
+    - name: Peng Xu
+      photo: images/people/pxu.jpg
+      role: >-
+        Group Leader, Ames National Laboratory<br>
+        Adjunct Assistant Professor, Department of Chemistry, Iowa State University
+      bio: ""   # TODO: 2-3 sentences: PhD (where, advisor), postdoc, current positions
+      interests_summary: >-
+        First-principles theories and scalable computational frameworks for complex
+        chemical and biological systems.
+      interests:
+        - "Fragmentation and embedding methods: EFP, FMO, EFMO, and QM/EFP"
+        - Intermolecular interactions, many-body and higher-order (R<sup>−7</sup>, R<sup>−8</sup>) dispersion, and ab initio force fields
+        - Open-shell and multireference quantum chemistry method development
+        - Free energies and sampling with Monte Carlo, molecular dynamics, and the QM-based mining minima method (QM-VM2)
+        - GPU-accelerated and high-performance quantum chemistry in GAMESS, automated workflows, and AI-assisted modernization of scientific software
+        - "Applications: protein–ligand binding, metal–biomolecule interactions, gas adsorption and separation, catalysis, and critical-materials chemistry"
+      email:
+        - pxu@ameslab.gov
+        - pxu@iastate.edu
+      links: true
+
+- section: Postdoctoral Researchers
+  members:
+    - name: Gregory Curtin
+      photo: ""      # TODO: images/people/gregory-curtin.jpg
+      role: Postdoctoral Research Associate, Ames National Laboratory   # TODO: confirm title
+      interests: ""  # TODO
+      project: ""    # TODO
+      email: ""      # TODO
+      fun: ""        # TODO (optional)
+
+- section: Graduate Students
+  members:
+    - name: Elijah Jibben
+      photo: images/people/elijah-jibben.jpg
+      role: Graduate Student, Department of Chemistry, Iowa State University
+      interests: >-
+        Theoretical chemistry, electronic structure theory, non-adiabatic molecular
+        dynamics, photochemistry, and environmental modelling.
+      project: >-
+        Software tools and optimizations for high-performance computing of electronic
+        structure and fragmentation methods on supercomputer clusters.
+      email: ejibben@iastate.edu
+      fun: >-
+        Elijah enjoys hardware engineering, software development, and laboratory
+        chemistry as hobbies. He regularly builds and programs desktops, laptops,
+        servers, network-attached storage, computing clusters, microcontrollers,
+        3D printers, and other systems from individual components.
+
+    - name: Sam Leonard
+      photo: images/people/sam-leonard.jpg
+      role: Graduate Student, Department of Chemistry, Iowa State University
+      # TODO: review this draft with Sam
+      interests: >-
+        Intermolecular interactions and London dispersion, fragment-based quantum
+        chemistry, and their uses across chemistry, physics, medicine, energy, and
+        materials.
+      project: >-
+        Dispersion energies and analytic gradients for the QM/EFP method, building on
+        the group's R<sup>−7</sup> and R<sup>−8</sup> dispersion work.
+      email: sleonard@iastate.edu
+      fun: Sam loves Godzilla and <em>The Lord of the Rings</em>.
+
+- section: Undergraduate Students
+  members:
+    - name: Connor Fundell
+      photo: images/people/connor-fundell.jpg
+      role: Undergraduate Student, Iowa State University
+      interests: >-
+        Theoretical chemistry, physics beyond the Standard Model, and electronic
+        structure theory.
+      project: >-
+        A spherical tensor formalism for dispersion in the EFP framework, and a
+        computational study of methane combustion pathways.
+      email: cfundell@iastate.edu
+      fun: >-
+        Connor enjoys stargazing, hiking, and music. He has visited more than ten
+        U.S. National Parks, including Zion and Mammoth Cave.
+
+- section: Visiting Scholars and Students
+  members: []
+
+- section: Alumni
+  members: []
